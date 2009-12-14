@@ -23,7 +23,7 @@ plt.asym(p.asym.out, rhostart = 1)
    the numerator and denominator degrees of freedom of the F-distribution, and the p-value are plotted on the bottom 
    of the figure.  
 }
-\author{ Uwe Menzel  <uwe.menzel@genpat.uu.se>}
+\author{ Uwe Menzel  <uwemenzel@gmail.com>}
 \seealso{ See the function \code{\link{p.asym}} for the calculation of the p-values. }
 \examples{
 
@@ -31,11 +31,11 @@ plt.asym(p.asym.out, rhostart = 1)
 library(CCP)
 
 
-## Load example data:
-data(Xdata)     # independent variables
-data(Ydata)     # dependent variables
-X <- as.matrix(Xdata)
-Y <- as.matrix(Ydata)
+
+## Simulate  example data:
+X <- matrix(rnorm(150), 50, 3)
+Y <- matrix(rnorm(250), 50, 5)
+
 
 
 ## Calculate canonical correlations, using the function "cancor" from the "stats" package:

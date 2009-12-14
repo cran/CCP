@@ -57,7 +57,7 @@ p.asym(rho, N, p, q, tstat = "Wilks")
   John Wiley and Sons, New York.
 
 }
-\author{ Uwe Menzel  <uwe.menzel@genpat.uu.se>}
+\author{ Uwe Menzel  <uwemenzel@gmail.com>}
 \note{ Usage of asymptotic approximations requires multivariate normality of the variables, 
        or a large number of observations. Canonical correlation is sensitive to outliers.
        The F-approximation for Roy's Largest Root is an upper bound, and the significance level is therefore 
@@ -71,11 +71,11 @@ p.asym(rho, N, p, q, tstat = "Wilks")
 library(CCP)
 
 
-## Load example data:
-data(Xdata)     # independent variables
-data(Ydata)     # dependent variables
-X <- as.matrix(Xdata)
-Y <- as.matrix(Ydata)
+
+## Simulate example data:
+X <- matrix(rnorm(150), 50, 3)
+Y <- matrix(rnorm(250), 50, 5)
+
 
 
 ## Calculate canonical correlations ("cancor" is part of the stats-package):

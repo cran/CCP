@@ -18,7 +18,7 @@ The main user functions are \code{p.asym}, \code{p.perm},
 \tabular{ll}{
 Package: \tab CCP\cr
 Type: \tab Package\cr
-Version: \tab 0.1\cr
+Version: \tab 1.1\cr
 Date: \tab 2009-12-14\cr
 License: \tab GPL\cr
 }
@@ -26,7 +26,7 @@ License: \tab GPL\cr
 }
 \author{Uwe Menzel
 
-  Maintainer: Uwe Menzel <uwe.menzel@genpat.uu.se>
+  Maintainer: Uwe Menzel <uwemenzel@gmail.com>
 }
 \keyword{htest}
 \keyword{multivariate}

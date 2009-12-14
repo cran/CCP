@@ -46,7 +46,7 @@ p.perm(X, Y, nboot = 999, rhostart = 1, type = "Wilks")
   \emph{Introduction to the Practice of Statistics, Chapter 14}, 
   W. H. Freeman, New York.
 }
-\author{ Uwe Menzel  <uwe.menzel@genpat.uu.se>}
+\author{ Uwe Menzel  <uwemenzel@gmail.com>}
 \note{ Permutation tests do not require a specific distribution of the variables.  
        Tests based on random resampling do generally not yield the same results when repeated.
        The canonical correlation coefficients are statistically significant
@@ -59,11 +59,10 @@ p.perm(X, Y, nboot = 999, rhostart = 1, type = "Wilks")
 library(CCP)
 
 
-## Load example data:
-data(Xdata)     # independent variables
-data(Ydata)     # dependent variables
-X <- as.matrix(Xdata)
-Y <- as.matrix(Ydata)
+## Simulate example data:
+X <- matrix(rnorm(150), 50, 3)
+Y <- matrix(rnorm(250), 50, 5)
+
 
 
 ## Run permutation test using Wilks Lambda (default) as test statistic; include different numbers of canonical correlations:
