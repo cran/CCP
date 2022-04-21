@@ -14,20 +14,8 @@ The main user functions are \code{p.asym}, \code{p.perm},
 \code{plt.asym}, and \code{plt.perm}.
 }
 
-\details{
-\tabular{ll}{
-Package: \tab CCP\cr
-Type: \tab Package\cr
-Version: \tab 1.1\cr
-Date: \tab 2009-12-14\cr
-License: \tab GPL\cr
-}
+\author{ Uwe Menzel  <uwemenzel@gmail.com>}
 
-}
-\author{Uwe Menzel
-
-  Maintainer: Uwe Menzel <uwemenzel@gmail.com>
-}
 \keyword{htest}
 \keyword{multivariate}
 \keyword{nonparametric}

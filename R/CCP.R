@@ -15,10 +15,6 @@ function(rho,p,q)
 
 
 
-
-
-
-
 "HotellingLawleyTrace" <-
 function (rho, p, q) 
 {
@@ -33,7 +29,6 @@ function (rho, p, q)
 
 
 
-
 "PillaiBartlettTrace" <-
 function (rho, p, q) 
 {
@@ -44,8 +39,6 @@ function (rho, p, q)
     }
     invisible(PillaiBartlettTrace)
 }
-
-
 
 
 
@@ -116,8 +109,6 @@ function (rho, N, p, q)
 
 
 
-
-
 "p.Roy" <-
 function (rho, N, p, q) 
 {
@@ -130,7 +121,6 @@ function (rho, N, p, q)
 
     invisible(list(id="Roy", stat = stat, approx = approx, df1 = df1,  df2 = df2, p.value = p.value))
 }
-
 
 
 
@@ -189,8 +179,6 @@ function (rho, N, p, q, tstat = "Wilks")
 
     invisible(list(id = tstat, stat = stat, approx = approx, df1 = df1, df2 = df2, p.value = p.value))
 }
-
-
 
 
 
@@ -261,7 +249,6 @@ function(X, Y, nboot = 999, rhostart = 1, type = "Wilks")
 
 
  
-
 
 "plt.asym" <-
 function(p.asym.out, rhostart = 1)

@@ -77,22 +77,23 @@ X <- matrix(rnorm(150), 50, 3)
 Y <- matrix(rnorm(250), 50, 5)
 
 
-
-## Calculate canonical correlations ("cancor" is part of the stats-package):
+## Calculate canonical correlations:
 rho <- cancor(X,Y)$cor
 
-## Define number of observations, number of dependent variables, number of independent variables.
+## Define number of observations, 
+## and number of dependent and independent variables:
 N = dim(X)[1]       
 p = dim(X)[2]   
 q = dim(Y)[2]
 
-## Calculate p-values using the F-approximations of different test statistics:
+## Calculate p-values using F-approximations of some test statistics:
 p.asym(rho, N, p, q, tstat = "Wilks")
 p.asym(rho, N, p, q, tstat = "Hotelling")
 p.asym(rho, N, p, q, tstat = "Pillai")
 p.asym(rho, N, p, q, tstat = "Roy")
 
-## Plot the F-approximation for Wilks' Lambda, considering 3, 2, or 1 canonical correlation(s):
+## Plot the F-approximation for Wilks' Lambda, 
+## considering 3, 2, or 1 canonical correlation(s):
 res1 <- p.asym(rho, N, p, q)
 plt.asym(res1,rhostart=1)
 plt.asym(res1,rhostart=2)

@@ -1,9 +1,9 @@
-b989ec08e773ede76c319c41b7c4ee84 *DESCRIPTION
-9fdfeb11f7ddba6f3aab9aaa6b1ac5dd *NAMESPACE
-abe45ae1d2d0b7f15dda81ecaa8b2af8 *R/CCP.R
+523fd52c0bc07e97e311941e69c95c44 *DESCRIPTION
+50b18db011be9e3c6fc1e191815a203f *NAMESPACE
+fee64660c3a550c623eb1057ef1718b4 *R/CCP.R
 d36204473ef1800d364b057ab529b583 *man/CCP-internal.Rd
-acaa40a37e4eeff3e6c5ab2f1526afc0 *man/CCP.Rd
-edb6f8928dc909ed9ccacd08d197e11a *man/p.asym.Rd
-d4c461021314310a8bfbd4baa50ead89 *man/p.perm.Rd
-3c2860570efc93af21c2a3d215f40045 *man/plt.asym.Rd
-e469f304cd860fc761d5ed99794ee6bd *man/plt.perm.Rd
+eea6a37a9ea19e1eab778dc660fdd9cc *man/CCP.Rd
+3d929a249a964f09df3eda28d00053be *man/p.asym.Rd
+b826312b8d35035f04ebec6e2af0773c *man/p.perm.Rd
+53e03d6c6593898fae4fffd3d3156352 *man/plt.asym.Rd
+8deadc42e7d2e795c52c2a98127aeeaa *man/plt.perm.Rd

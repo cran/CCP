@@ -28,11 +28,8 @@ plt.perm(p.perm.out)
    The grey vertical line represents the mean of the permutation distribution. 
 }
 \author{ Uwe Menzel  <uwemenzel@gmail.com>}
-\note{
-In contradiction to \code{plt.asym}, the parameter \code{rhostart} cannot be chosen when running \code{pltperm}, , 
-because it has already been determined in \code{\link{p.perm}}.  
-}
-\seealso{ See the function \code{\link{p.perm}} for the calculation of the p-values. }
+
+\seealso{ See the function \code{p.perm} for the calculation of the p-values. }
 \examples{
 
 ## Load the CCP package:
@@ -49,20 +46,24 @@ Y <- matrix(rnorm(250), 50, 5)
 ## Calculate canonical correlations:
 rho <- cancor(X,Y)$cor
 
-## Define number of observations, number of dependent variables, number of independent variables.
+## Define number of observations, 
+## and number of dependent and independent variables:
 N = dim(X)[1]       
 p = dim(X)[2]   
 q = dim(Y)[2]
 
 
-# plot the permutation distribution of an F approximation for Wilks' Lambda, considering 3 and 2 canonical correlations:
+## Plot the permutation distribution of an F approximation 
+## for Wilks Lambda, considering 3 and 2 canonical correlations:
 out1 <- p.perm(X, Y, nboot = 999, rhostart = 1)  
 plt.perm(out1)    
 out2 <- p.perm(X, Y, nboot = 999, rhostart = 2)  
 plt.perm(out2) 
 
 
-# plot the permutation distribution of an F approximation for the Pillai-Bartlett Trace, considering 3, 2, and 1 canonical correlation(s):
+## Plot the permutation distribution of an F approximation 
+## for the Pillai-Bartlett Trace, 
+## considering 3, 2, and 1 canonical correlation(s):
 res1 <- p.perm(X, Y, nboot = 999, rhostart = 1, type = "Pillai")  
 plt.perm(res1)    
 res2 <- p.perm(X, Y, nboot = 999, rhostart = 2, type = "Pillai")  
